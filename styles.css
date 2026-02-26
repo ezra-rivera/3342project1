@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6f4ff;
+}
+
+.navbar {
+    width: 100%;
+    background: white;
+    padding: 15px 20px;
+}
+
+.navbar .nav-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #1da1f2;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar svg {
+    width: 25px;
+    fill: #1da1f2;
+}
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+}
+.tweet-box {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.profile-circle {
+    width: 60px;
+    height: 60px;
+    background: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-circle.small {
+    width: 45px;
+    height: 45px;
+}
+
+textarea {
+    width: 95%;
+    height: 80px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    resize: none;
+    font-size: 14px;
+}
+.tweet-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+button {
+    background: #1da1f2;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0d8ddb;
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+button:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+.tweet {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.tweet-header {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.tweet-icons {
+    display: flex;
+    gap: 30px;
+    margin-top: 12px;
+}
+
+.tweet-icons i {
+    font-size: 18px;
+    cursor: pointer;
+    color: gray;
+    transition: 0.2s ease;
+}
+.tweet-icons i:hover {
+    transform: scale(1.2);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon:hover {
+    color: #1da1f2;
+    transform: scale(1.1);
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 5px;
+    }
+
+    textarea {
+        height: 70px;
+    }
+}
